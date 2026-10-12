@@ -1,0 +1,12 @@
+{
+  "name": "royal-stay-hotel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Royal Stay Hotel local website and booking server",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

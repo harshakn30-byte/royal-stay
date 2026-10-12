@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Stay Hotel</title>
+  <meta name="description" content="Stay in comfort at Royal Stay Hotel. Explore our rooms, services, and make your reservation in Bengaluru.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="loader" id="loader"><div class="spinner"></div><h2>Royal Stay</h2></div>
+
+<header>
+<nav>
+  <div class="logo">🏨 Royal <span>Stay</span></div>
+  <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li><li><a href="#rooms">Rooms</a></li>
+    <li><a href="#services">Services</a></li><li><a href="#about">About</a></li>
+    <li><a href="#booking">Booking</a></li><li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="small-title">WELCOME TO ROYAL STAY</p>
+    <h1>Experience Luxury<br><span>Like Never Before</span></h1>
+    <p class="hero-text">Enjoy premium rooms, delicious food and unforgettable hospitality.</p>
+    <a href="#booking" class="main-btn">Book Your Stay</a>
+  </div>
+</section>
+
+<section class="quick-book">
+  <div><label for="quickCheckIn">Check In</label><input type="date" id="quickCheckIn" required></div>
+  <div><label for="quickCheckOut">Check Out</label><input type="date" id="quickCheckOut" required></div>
+  <div><label for="quickGuests">Guests</label><select id="quickGuests">
+    <option value="1">1 Guest</option><option value="2">2 Guests</option>
+    <option value="3">3 Guests</option><option value="4">4 Guests</option>
+  </select></div>
+  <button id="availabilityBtn" type="button">Check Availability</button>
+</section>
+
+<section class="section" id="rooms">
+  <div class="section-title"><p>OUR ROOMS</p><h2>Choose Your Perfect Stay</h2></div>
+  <div class="room-container">
+    <div class="room-card">
+      <div class="room-image"><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80" alt="Deluxe room"><span class="room-tag">Popular</span></div>
+      <div class="room-info"><h3>Deluxe Room</h3><p>Comfortable room with modern facilities and beautiful interiors.</p>
+      <div class="features">🛏️ 2 Guests &nbsp;|&nbsp; 📶 Free Wi-Fi</div><div class="room-bottom"><strong>₹3,500 <small>/ night</small></strong><button class="select-room" data-room="Deluxe Room">Book Now</button></div></div>
+    </div>
+    <div class="room-card">
+      <div class="room-image"><img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80" alt="Premium room"></div>
+      <div class="room-info"><h3>Premium Room</h3><p>Spacious premium room designed for maximum comfort.</p>
+      <div class="features">🛏️ 3 Guests &nbsp;|&nbsp; 📺 Smart TV</div><div class="room-bottom"><strong>₹4,500 <small>/ night</small></strong><button class="select-room" data-room="Premium Room">Book Now</button></div></div>
+    </div>
+    <div class="room-card">
+      <div class="room-image"><img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80" alt="Luxury suite"><span class="room-tag">Luxury</span></div>
+      <div class="room-info"><h3>Luxury Suite</h3><p>Experience the finest luxury with premium facilities.</p>
+      <div class="features">🛏️ 4 Guests &nbsp;|&nbsp; 🛁 Private Bath</div><div class="room-bottom"><strong>₹6,000 <small>/ night</small></strong><button class="select-room" data-room="Luxury Suite">Book Now</button></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section services-section" id="services">
+  <div class="section-title"><p>HOTEL SERVICES</p><h2>Everything You Need</h2></div>
+  <div class="services">
+    <div class="service-card"><div>🏊</div><h3>Swimming Pool</h3><p>Relax and enjoy our beautiful swimming pool.</p></div>
+    <div class="service-card"><div>🍽️</div><h3>Restaurant</h3><p>Enjoy delicious meals prepared by our expert chefs.</p></div>
+    <div class="service-card"><div>📶</div><h3>Free Wi-Fi</h3><p>High-speed internet available throughout the hotel.</p></div>
+    <div class="service-card"><div>🚗</div><h3>Free Parking</h3><p>Safe and secure parking for all our guests.</p></div>
+    <div class="service-card"><div>💪</div><h3>Fitness Center</h3><p>Modern equipment to keep you active during your stay.</p></div>
+    <div class="service-card"><div>🛎️</div><h3>24/7 Service</h3><p>Our staff is available whenever you need assistance.</p></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-content">
+    <div><p class="gold-title">ABOUT ROYAL STAY</p><h2>A Perfect Place<br>To Relax & Enjoy</h2>
+      <p>Royal Stay Hotel offers a perfect combination of luxury, comfort and excellent hospitality.</p>
+      <p>Whether you are travelling for business or spending time with family, we make your stay memorable.</p>
+      <a href="#booking" class="main-btn">Book Your Stay</a>
+    </div>
+    <div class="about-image"><img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1000&q=80" alt="Royal Stay hotel"></div>
+  </div>
+</section>
+
+<section class="section booking-section" id="booking">
+  <div class="section-title"><p>RESERVATION</p><h2>Book Your Room</h2></div>
+  <form id="bookingForm" class="booking-form" action="/api/bookings" method="POST">
+    <div class="form-row">
+      <div><label for="name">Full Name</label><input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name" maxlength="100" required></div>
+      <div><label for="email">Email</label><input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" maxlength="254" required></div>
+    </div>
+    <div class="form-row">
+      <div><label for="checkin">Check In</label><input type="date" id="checkin" name="checkin" required></div>
+      <div><label for="checkout">Check Out</label><input type="date" id="checkout" name="checkout" required></div>
+    </div>
+    <div class="form-row">
+      <div><label for="guests">Guests</label><input type="number" id="guests" name="guests" min="1" max="4" step="1" placeholder="Number of guests" required></div>
+      <div><label for="roomType">Room Type</label><select id="roomType" name="room" required>
+        <option value="">Select Room</option><option value="Deluxe Room">Deluxe Room</option>
+        <option value="Premium Room">Premium Room</option><option value="Luxury Suite">Luxury Suite</option>
+      </select></div>
+    </div>
+    <button type="submit" class="main-btn">Confirm Booking</button>
+  </form>
+</section>
+
+<section class="contact" id="contact">
+  <div class="section-title"><p>CONTACT US</p><h2>Get In Touch</h2></div>
+  <div class="contact-box">
+    <div>📍<strong>Address</strong><p><a href="https://maps.google.com/?q=MG+Road,+Bengaluru" target="_blank" rel="noopener noreferrer">MG Road, Bengaluru</a></p></div>
+    <div>📞<strong>Phone</strong><p><a href="tel:+919876543210">+91 98765 43210</a></p></div>
+    <div>📧<strong>Email</strong><p><a href="mailto:royalstay@gmail.com">royalstay@gmail.com</a></p></div>
+  </div>
+</section>
+
+<footer><h2>🏨 Royal Stay</h2><p>Luxury • Comfort • Hospitality</p><p>© 2026 Royal Stay Hotel</p></footer>
+
+<div class="popup" id="popup" role="dialog" aria-modal="true" aria-labelledby="popupTitle" aria-hidden="true"><div class="popup-box"><div class="success-icon" aria-hidden="true">✓</div><h2 id="popupTitle">Booking details ready</h2><div id="popupMessage">Your dates and guest count are ready. Choose a room to continue.</div><button id="popupClose" type="button">Continue to booking</button></div></div>
+<script src="script.js"></script>
+</body>
+</html>
